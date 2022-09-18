@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de aluno</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h2>Cadastro de aluno</h2>
+    <div>
+        <b>Nome: </b>
+        <form action="script.js">
+            <input type="text" placeholder="digite seu nome completo" name="nome" id="nome" size="50" />
+        </form>
+        <p></p>
+        <b>Curso: </b>
+        <form action="script.js">
+            <select name="curso" placeholder="selecione o seu curso" name="curso" id="curso">
+                <option value="">selecione o curso</option>
+                <option value="Ciência da computação">Ciência da computação</option>
+                <option value="Direito">Direito</option>
+                <option value="Medicina">Medicina</option>
+                <option value="Jogos Digitais">Jogos Digitais</option>
+                <option value="Analise de Sistemas">Análise de sistemas</option>
+                <option value="Enfermagem">Enfermagem</option>
+            </select>
+        </form>
+        <p></p>
+        <b>Dias da semana: </b>
+        <form action="script.js">
+            <select multiple size="5" id="dia">
+                <option value="segunda" name="dia">Segunda</option>
+                <option value="terca" name="dia">terça</option>
+                <option value="quarta" name="dia">Quarta</option>
+                <option value="quinta" name="dia">Quinta</option>
+                <option value="sexta" name="dia">Sexta</option>
+            </select>
+        </form>
+        <p></p>
+        <b>Turno: </b>
+        <form action="script.js" id="turno">
+            <input type="radio" value="manha" name="turno" id="turno" />Manhã
+            <input type="radio" value="tarde" name="turno" id="turno" />Tarde
+            <input type="radio" value="noite" name="turno" id="turno" />Noite
+        </form>
+        <p></p>
+        <b>Caso tenha, selecione as comorbidades que tem</b>
+        <form action="script.js">
+            <input type="checkbox" value="Cardíaco" name="cardiaco" id="cardiaco">Cardíaco</input>
+            <input type="checkbox" value="Diabetes" name="diabete" id="diabete">Diabetes</input>
+            <input type="checkbox" value="Obesidade" name="obesidade" id="obesidade">obesidade</input>
+
+        </form>
+        <p></p>
+        <b>Como você conheceu a faculdade</b>
+
+        <form action="script.js">
+            <textarea name="conheceu" id="conheceu" cols="40" rows="10" maxlength="144"
+                placeholder="deixe sua resposta aqui..." onkeyup="caracteres()"></textarea>
+            <br>
+            <p1>quantidade de palavras: </p1>
+            <p1 id="quantidadePalavras"></p1>
+        </form>
+
+        <p></p>
+        <button onclick="cadastro()">Confirmar cadastro</button>
+
+
+    </div>
+</body>
