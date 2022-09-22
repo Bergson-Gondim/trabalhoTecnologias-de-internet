@@ -59,8 +59,8 @@ function cadastro() {
         }
     }
     var selectedDias=diaSemana.join();
-    alert(selectedDias);
-    // alert("Nome: "+nome+"\nCurso: "+curso+"\nTurno: "+turno+"\nDias da semana: "+diaSemana+"\nComorbidades: "+comorbidades);
+    // alert(selectedDias);
+    alert("Nome: "+nome+"\nCurso: "+curso+"\nTurno: "+turno+"\nDias da semana: "+diaSemana+"\nComorbidades: "+comorbidades);
 
 }
 
