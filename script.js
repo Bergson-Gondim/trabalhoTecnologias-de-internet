@@ -64,12 +64,7 @@ function cadastro() {
 
 }
 
-function caracteres() {
-    conheceu = document.getElementById('conheceu').value;
-    const sizeString = conheceu.split(" ");
-    console.log(sizeString.length);
-    document.getElementById('quantidadePalavras').innerHTML = sizeString.length;
-}
+
 
 
 
